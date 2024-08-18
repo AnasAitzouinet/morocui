@@ -1,0 +1,18 @@
+<svg width="340" height="124" viewBox="0 0 340 124" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="340" height="124" fill="#252525"/>
+<g id="Mask group">
+<g id="Desktop - 2">
+<rect width="1582" height="965" transform="translate(-1253 -932)" fill="url(#pattern0_0_1)"/>
+</g>
+</g>
+<g id="Vector">
+<path d="M66.3809 81.0004C66.3809 57.8045 85.1849 39.0004 108.381 39.0004H339.381V123H66.3809V81.0004Z" fill="#D9D9D9"/>
+<path d="M2.55723 123.839C27.0073 122.294 55.2164 117.07 64.3278 94.3282C65.5996 91.1539 66.4849 87.7431 66.7946 84.1186C68.7582 61.1375 67.7319 122.997 67.7319 122.997L0 124L2.55723 123.839Z" fill="#D9D9D9"/>
+<path d="M301.057 39.0004C320.872 39.0004 338.979 25.311 339.381 5.5C339.839 -17.0985 339.381 39.0004 339.381 39.0004H288.881H301.057Z" fill="#D9D9D9"/>
+</g>
+<defs>
+<pattern id="pattern0_0_1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_1" transform="matrix(0.000244141 0 0 0.000400239 0 -0.0465261)"/>
+</pattern>
+</defs>
+</svg>
