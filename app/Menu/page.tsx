@@ -56,7 +56,7 @@ export default function Menu() {
                     <div className='flex flex-col justify-center items-center gap-y-4
                         md:flex-row md:w-3/4 md:gap-x-5
                     '>
-                        <img src="./Menus.jpg" alt="" className='w-3/4 md:w-1/4 rounded-lg object-cover aspect-square ' />
+                        <img src="./menus.jpg" alt="" className='w-3/4 md:w-1/4 rounded-lg object-cover aspect-square ' />
 
                         <div className='w-3/4 md:w-full flex flex-col '>
                             <div className='text-white text-2xl flex justify-between items-center md:w-full '>
@@ -77,7 +77,7 @@ export default function Menu() {
                     <div className='flex flex-col justify-center items-center gap-y-4
                         md:flex-row md:w-3/4 md:gap-x-5
                     '>
-                        <img src="./Menus.jpg" alt="" className='w-3/4 md:w-1/4 rounded-lg object-cover aspect-square ' />
+                        <img src="./menus.jpg" alt="" className='w-3/4 md:w-1/4 rounded-lg object-cover aspect-square ' />
 
                         <div className='w-3/4 md:w-full flex flex-col '>
                             <div className='text-white text-2xl flex justify-between items-center md:w-full '>
