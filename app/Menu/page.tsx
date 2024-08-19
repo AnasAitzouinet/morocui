@@ -5,11 +5,19 @@ import React from 'react'
 import { Badge } from "@/components/ui/badge"
 import Animator from '@/components/Wrappers/Animator';
 import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
 
 export default function Menu() {
     return (
-        <main className='flex flex-col xl:block xl:gap-x-2 gap-y-3 p-3  relative'>
+        <main
+            className='flex flex-col xl:block xl:gap-x-2 gap-y-3 p-3  relative'>
             {/* <Animator /> */}
+            <motion.div
+                className='w-full h-full absolute object-cover'
+                initial={{ position: 'absolute', zIndex: 100, backgroundColor: '#000', left: 0, top: 0, width: '100vw', height: '100vh' }}
+                animate={{ width: '0' }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+            />
             <img src="./bg.jpg" alt="" className='w-full h-full fixed object-cover' />
             <div className='h-[25rem] md:h-[47rem] lg:h-[57rem] xl:h-screen xl:w-1/2 rounded-2xl
             xl:fixed xl:top-0 xl:left-0 xl:p-2 relative
@@ -25,17 +33,18 @@ export default function Menu() {
             </div>
 
             <div className='border rounded-xl border-gray-300/20 px-2 py-8
-             xl:w-1/2  xl:
+             xl:w-1/2  xl: z-50
              xl:absolute  xl:top-1.5  xl:right-1'>
-                <div className='flex justify-center items-center gap-x-2'>
+                <div className='flex justify-center items-center gap-x-2 '>
                     <Badge className='uppercase font-thin bg-neutral-950 border border-gray-300/10 rounded-md py-1'>couscous</Badge>
                     <Badge className='uppercase font-thin bg-neutral-950 border border-gray-300/10 rounded-md py-1'>tajin</Badge>
                     <Badge className='uppercase font-thin bg-neutral-950 border border-gray-300/10 rounded-md py-1'>seffa</Badge>
                 </div>
+
                 {/* Menu  */}
-                <div className='py-5 space-y-5  flex flex-col justify-center items-center gap-y-5'>
+                <div className='py-5 space-y-5  flex flex-col justify-center items-center gap-y-5 '>
                     <div className='flex flex-col justify-center items-center -space-y-5  py-5'>
-                        <h2 className='text-4xl text-white text-center'>couscous</h2>
+                        <h2 className='text-4xl text-white text-center'>Tajin</h2>
                         <svg
                             className='w-1/4'
                             width="883" height="74" viewBox="0 0 883 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,11 +105,11 @@ export default function Menu() {
                     </div>
 
                 </div>
-                 
-                 {/* Menu  */}
-                <div className='py-5 space-y-5  flex flex-col justify-center items-center gap-y-5'>
-                    
-                    <div className='flex flex-col justify-center items-center -space-y-5  py-5'>
+
+                {/* Menu  */}
+                <div className='py-5 space-y-5  flex flex-col justify-center items-center gap-y-5 '>
+
+                    <div className='flex flex-col justify-center items-center -space-y-5   py-5'>
                         <h2 className='text-4xl text-white text-center'>couscous</h2>
                         <svg
                             className='w-1/4'

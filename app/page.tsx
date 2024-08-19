@@ -4,13 +4,13 @@ import { Button } from '@/components/ui/button';
 import Cards from '@/components/Wrappers/Cards';
 import { Facebook, Instagram, Twitch } from 'lucide-react';
 import React from 'react';
-import Animator from '@/components/Wrappers/Animator';
+import { motion } from 'framer-motion';
 
 const Items = [
   {
     image: './Menu.jpg',
     button: 'Menu',
-    href: '/',
+    href: '/Menu',
   },
   {
     image: './aboutus.jpg',
@@ -27,11 +27,15 @@ const Items = [
 
 export default function HeroSection() {
   return (
-    <main
+    <motion.main
+      initial={{ opacity: 0 , filter: 'blur(10px)' }}
+      animate={{ opacity: 1 , filter: 'blur(0px)' }}
+      transition={{ duration: 0.7 , delay: 0.5 }}
       className='flex flex-col lg:h-screen lg:overflow-hidden relative
       lg:space-y- xl:flex-row justify-center items-center xl:gap-x-5
      p-3 gap-y-5'>
-      <Animator />
+      {/* <Animator /> */}
+      <img src="./bg.jpg" alt="" className='w-full h-full fixed object-cover' />
 
       {/* Left side of the door */}
       {/* <motion.div
@@ -103,7 +107,7 @@ export default function HeroSection() {
               key={i.button}
               image={i.image}
               button={i.button}
-              href='/'
+              href={i.href}
               objectPosition={i.objectPosition}
             />
           ))
@@ -129,6 +133,6 @@ export default function HeroSection() {
           Qitchen
         </h1>
       </div>
-    </main>
+    </motion.main>
   );
 }
